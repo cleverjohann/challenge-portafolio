@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box; /* calcula o tamanho do elemento */
+    padding: 0%;
+    margin: 0%;
+}
 body{
     background: #F3F5FC;
     
@@ -26,9 +31,19 @@ body{
     color: #0A3871;
 }
 .btnCopiar{
-    position: absolute;
+    position: relative;
     color: white;
     bottom: 0;
+}
+.txtArea{
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #D8DFE8;
+    box-sizing: border-box;
+    border-radius: 16px;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
 }
 .txfMuestra
 {   
@@ -38,8 +53,8 @@ body{
     justify-content: center;
     text-align: center;
     width: 400px;
-    height: 944px;
-    left: 1000px;
+    
+    
     top: 40px;
     /* White */
     background: #FFFFFF;
@@ -58,9 +73,16 @@ body{
     padding: 0px;
     gap: 40px;
 
-    position: absolute;
+    position: relative;
     width: 120px;
     height: 48px;
-    left: 40px;
+    left: 20px;
     top: 40px;
+}
+.contenedor-principal
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
 }

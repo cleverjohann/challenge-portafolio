@@ -63,7 +63,9 @@
 
         return paragraph;
         }   
-
+        function copyToClipboard() {
+            navigator.clipboard.writeText(message2.textContent);
+        }
 
         btnEncriptar.addEventListener("click", function(){           
             message2.textContent = encryptVowels(message.value);
@@ -73,7 +75,6 @@
             console.log("probando decifrar")
         })
         btnCopiar.addEventListener("click", function(){
-            message2.select();
-            document.execCommand("copy");
+            copyToClipboard();
         })
 
