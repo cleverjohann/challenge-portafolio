@@ -3,8 +3,8 @@
         let btnEncriptar = document.getElementById("btnEncriptar");
         let btnDecifrar = document.getElementById("btnDecifrar");
         let btnCopiar = document.getElementById("btnCopiar");
-        const message2 = document.getElementById("message2");
-        
+        let message2 = document.getElementById("message2");
+        let txtRespuesta = document.getElementById("txtRespuesta");
         console.log("probando indexof");
         let word = "Hola";
         console.log(word.search("x"));
@@ -68,11 +68,14 @@
         }
 
         btnEncriptar.addEventListener("click", function(){           
-            message2.textContent = encryptVowels(message.value);
+            
+            
+        message2.textContent = encryptVowels(message.value);
+            
         })
         btnDecifrar.addEventListener("click", function(){           
             message2.textContent = decryptWords(message.value);
-            console.log("probando decifrar")
+            
         })
         btnCopiar.addEventListener("click", function(){
             copyToClipboard();
